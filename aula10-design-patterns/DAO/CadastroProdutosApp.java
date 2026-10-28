@@ -5,7 +5,7 @@ import java.util.List;
 public class CadastroProdutosApp {
     public static void main(String[] args) {
         // Criação do DAO que manipula o arquivo de produtos
-        ProdutoDAO dao = new ProdutoArquivoDAO();
+        IProdutoDAO dao = new ProdutoArquivoDAOImpl();
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
 
